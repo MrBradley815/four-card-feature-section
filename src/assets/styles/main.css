@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@import '@fontsource/poppins/200.css';
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/600.css';
+
+@theme {
+  --color-gray-500: #4d4f62;
+  --color-gray-400: #6a7178;
+  --color-red: #ea5454;
+  --color-cyan: #44d3d2;
+  --color-blue: #549ef2;
+  --color-orange: #fcae4a;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply text-preset-4 text-gray-500 px-7.75 sm:px-13.5 py-14 sm:py-20 lg:py-25.5 min-h-screen bg-[#fafafa];
+  }
+}
+
+@utility text-preset-1 {
+  @apply sm:text-4xl text-2xl font-semibold leading-[140%] tracking-[0.25px];
+}
+
+@utility text-preset-2 {
+  @apply sm:text-4xl text-2xl font-extralight leading-[140%] tracking-[0.25px];
+}
+
+@utility text-preset-3 {
+  @apply text-xl font-semibold leading-[135%];
+}
+
+@utility text-preset-4 {
+  @apply text-[15px] font-normal leading-[140%];
+}
+
+@utility text-preset-5 {
+  @apply text-[13px] font-normal leading-[160%];
+}
